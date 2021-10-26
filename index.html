@@ -34,6 +34,9 @@
                 console.log(data)
                 const {words} = data;                
                 const template = words.map(word => {
+                    if(word.r_seq == undefined){
+                        word.r_seq =""
+                    }
                     return(
                         `
                             <div class="item">
